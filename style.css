@@ -1,0 +1,264 @@
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-image: url(./images/to-do-list.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;   
+    
+}
+
+
+.container {
+   
+    margin: 3rem 7rem;
+    text-align: center;
+    padding: 0.5rem 0;
+    font-size: 0.9rem;
+    background-color: slategrey;
+    
+    
+    border-radius: 20px;
+    border: 0.5rem solid crimson;
+    display: flex;
+    flex-direction: column;    
+    
+}
+
+
+
+.header{
+    text-align: center;
+    color: black;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 2rem;
+    font-size: 1rem;
+    /* flex: 1; */
+}
+
+.header h3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+   
+}
+
+.header p {
+    display: inline-block;
+    
+}
+
+.header i{
+    color: yellow;
+    display: inline-block;
+}
+
+.task-input{
+    
+    margin-bottom: 0.7rem;    
+    margin-left: 0.05rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#task{
+    width: 20rem;
+    height: 2rem;
+    border-radius: 0.5rem;
+    padding: 0.4rem;
+    
+    
+}
+
+#plus{
+    border: 0.05rem solid black;
+    border-radius: 0.25rem;
+    padding: 0.1rem;
+    
+    background-color: crimson;
+    position:relative;
+    left: -1.6rem;
+    top: 0.025rem;
+    cursor: pointer;    
+}
+
+
+
+#list{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+     
+}
+
+
+
+.fa-trash{ 
+    position:relative;
+    left: 20.8rem;
+    top: -0.05rem;
+    cursor: pointer;
+}
+.fa-trash:hover{
+    color: red;
+}
+
+
+.fa-pen{
+    position:relative;
+    left: 19.8rem;
+    top: -0.05rem;
+    cursor: pointer;
+}
+.fa-pen:hover{
+    color:red;
+}
+
+.fa-print:hover{
+    color: brown;
+
+}
+
+
+.myInput{    
+    background-color: chocolate;
+    border: 2px solid black;    
+    font-family: Arial, Helvetica, sans-serif;    
+    margin: 0.15rem 0;
+    justify-content: center;    
+    width: 24rem;
+    height: 2rem;
+    border-radius: 0.5rem;
+    padding: 0.4rem 0rem; 
+    /* position: relative;  */
+    text-align: left;
+  }
+
+  #myCheckbox{
+      position: relative;
+      left: 0.3rem;      
+      cursor: pointer;    
+      
+  }  
+  
+  .footer-down{
+      text-align: center;
+      color: black;
+      font-family: Arial, Helvetica, sans-serif;
+      text-decoration: underline;
+      margin-top: 4rem;
+      
+  }
+  #footer-down_img{
+      width: 1.2rem;
+      align-self: baseline;
+  }
+  .footer-down a:hover{
+      text-decoration: overline;
+      background-color: aqua;
+
+  }
+
+  @media only screen and (max-width: 900px){
+    .myInput{    
+        background-color: darksalmon;
+        border: 2px solid black;    
+        font-family: Arial, Helvetica, sans-serif;    
+        margin: 0.15rem 0;
+        justify-content: center;    
+        width: 14rem;
+        height: 1.4rem;
+        border-radius: 0.5rem;
+        padding: 0rem 0rem; 
+        /* position: relative;  */
+        text-align: left;
+        align-items: center;
+        
+      }
+      .fa-trash{ 
+        position:relative;
+        left: 11rem;
+        top: 0.10rem;
+        cursor: pointer;
+    }
+    #myCheckbox{
+        position: relative;
+        left: 0.3rem; 
+        top: 0.10rem;     
+        cursor: pointer;       
+        
+    } 
+    .fa-pen{
+        position:relative;
+        left: 10.4rem;
+        top: 0.05rem;
+        cursor: pointer;
+    }
+    #task{
+        width: 14rem;
+        height: 1.8rem;
+        border-radius: 0.5rem;
+        padding: 0.4rem;
+        
+    }
+        
+    #plus{
+        border: 0.05rem solid black;
+        border-radius: 0.25rem;
+        padding: 0.1rem;
+            
+        background-color: crimson;
+        position:relative;
+        left: -1.5rem;
+        top: 0.025rem;
+        cursor: pointer;    
+    }
+    .task-input{
+    
+        margin-bottom: 0.4rem;    
+        margin-left: 0rem;
+       
+        
+    }
+    
+
+  }
+  @media screen and (max-width :600px){
+    .container{
+        background-color: aqua;
+    }
+    .task-input{
+        position:relative;
+    }
+    
+    #plus{
+        border: 0.05rem solid black;
+        border-radius: 0.25rem;
+        padding: 0.05rem;
+            
+        background-color: crimson;
+        position:relative;
+        left: -1.3rem;
+        top: 0.00rem;
+        cursor: pointer;    
+    }
+    .task-input{
+       position: relative;
+    }
+  }
+
+
+
